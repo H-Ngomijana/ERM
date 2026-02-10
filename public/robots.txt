@@ -1,0 +1,17 @@
+git pull origin main
+npm install
+npm run buildALTER TABLE public.vehicles ADD COLUMN client_gender TEXT DEFAULT NULL;
+ALTER TABLE public.vehicles ADD CONSTRAINT valid_client_gender CHECK (client_gender IN ('male', 'female', NULL));User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
